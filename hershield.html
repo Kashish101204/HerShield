@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerShield - Women's Safety Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">🌸 HerShield</div>
+            <ul class="nav-links">
+                <li><a onclick="showSection('home')" class="active">Home</a></li>
+                <li><a onclick="showSection('safety-tips')">Safety Tips</a></li>
+                <li><a onclick="showSection('self-defense')">Self Defense</a></li>
+                <li><a onclick="showSection('health')">Health Awareness</a></li>
+                <li><a onclick="showSection('emergency')">Emergency</a></li>
+            </ul>
+            <button class="emergency-btn" onclick="handleEmergency()">🆘 EMERGENCY</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="home" class="section active">
+            <div class="hero">
+                <h1>Welcome to HerShield</h1>
+                <p>Your comprehensive platform for women's safety, self-defense, and health awareness</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" onclick="showSection('safety-tips')">
+                    <div class="feature-icon">💡</div>
+                    <h3>Safety Tips</h3>
+                    <p>Essential safety advice for various situations and locations</p>
+                </div>
+                <div class="feature-card" onclick="showSection('self-defense')">
+                    <div class="feature-icon">🥋</div>
+                    <h3>Self-Defense Guides</h3>
+                    <p>Learn essential self-defense techniques and strategies</p>
+                </div>
+                <div class="feature-card" onclick="showSection('health')">
+                    <div class="feature-icon">🏥</div>
+                    <h3>Health Awareness</h3>
+                    <p>Important health information and wellness tips for women</p>
+                </div>
+                <div class="feature-card" onclick="showSection('emergency')">
+                    <div class="feature-icon">🚨</div>
+                    <h3>Emergency Support</h3>
+                    <p>Quick access to emergency contacts and support services</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="safety-tips" class="section">
+            <h2>Safety Tips</h2>
+            
+            <div class="safety-tips">
+                <div class="tip-card">
+                    <h3>🌙 Night Safety</h3>
+                    <p>Always stay in well-lit areas, avoid using headphones, keep your phone charged, and trust your instincts. Share your location with trusted contacts when traveling alone at night.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🚗 Transportation Safety</h3>
+                    <p>Verify ride-share details, sit behind the driver, avoid sharing personal information, and always have an escape route planned. Keep emergency contacts readily accessible.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>🏠 Home Security</h3>
+                    <p>Install quality locks, use peepholes, don't open doors to strangers, keep emergency numbers visible, and consider security systems or cameras for added protection.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>💼 Workplace Safety</h3>
+                    <p>Know your company's safety policies, report harassment immediately, trust your instincts about colleagues, and maintain professional boundaries in all interactions.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>📱 Digital Safety</h3>
+                    <p>Use strong passwords, enable two-factor authentication, be cautious about sharing personal information online, and regularly review your privacy settings on social media.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="self-defense" class="section">
+            <h2>Self-Defense Guides</h2>
+            
+            <div class="self-defense-grid">
+                <div class="defense-card">
+                    <h3>👊 Basic Strikes</h3>
+                    <p>Palm strike to nose, knee to groin, elbow strike to ribs. Practice these simple but effective moves regularly.</p>
+                </div>
+                <div class="defense-card">
+                    <h3>🦵 Escape Techniques</h3>
+                    <p>How to break free from wrist grabs, bear hugs, and choke holds. Focus on vulnerable points and quick escapes.</p>
+                </div>
+                <div class="defense-card">
+                    <h3>🎯 Target Areas</h3>
+                    <p>Eyes, nose, throat, groin, knees, and instep. These are the most effective areas to target in self-defense situations.</p>
+                </div>
+                <div class="defense-card">
+                    <h3>🧠 Mental Preparedness</h3>
+                    <p>Stay alert, trust your instincts, have an escape plan, and practice situational awareness in all environments.</p>
+                </div>
+                <div class="defense-card">
+                    <h3>🔧 Everyday Items</h3>
+                    <p>Keys, pens, umbrella, bag - learn how to use common items as defensive tools when needed.</p>
+                </div>
+                <div class="defense-card">
+                    <h3>📢 Voice Defense</h3>
+                    <p>Use your voice as a weapon. Shout loudly, attract attention, and don't be afraid to make noise in dangerous situations.</p>
+                </div>
+            </div>
+            
+            <div class="section-buttons">
+                <button class="btn" onclick="startDefenseTraining()">🥋 Start Interactive Training</button>
+            </div>
+        </div>
+
+        <div id="health" class="section">
+            <h2>Health Awareness</h2>
+            
+            <div class="health-section">
+                <div class="health-card">
+                    <h3>🩺 Regular Checkups</h3>
+                    <p>Schedule annual gynecological exams, breast exams, and general health screenings. Early detection saves lives.</p>
+                    <ul>
+                        <li>Annual mammograms after 40</li>
+                        <li>Pap smears every 3 years</li>
+                        <li>Regular blood pressure checks</li>
+                        <li>Cholesterol screening</li>
+                    </ul>
+                </div>
+                <div class="health-card">
+                    <h3>💊 Mental Health</h3>
+                    <p>Prioritize your mental wellbeing. Seek help when needed and practice stress management techniques.</p>
+                    <ul>
+                        <li>Practice mindfulness and meditation</li>
+                        <li>Maintain social connections</li>
+                        <li>Get adequate sleep (7-9 hours)</li>
+                        <li>Don't hesitate to seek therapy</li>
+                    </ul>
+                </div>
+                <div class="health-card">
+                    <h3>🏃‍♀️ Physical Wellness</h3>
+                    <p>Regular exercise, balanced nutrition, and adequate sleep are essential for overall health and safety.</p>
+                    <ul>
+                        <li>150 minutes moderate exercise weekly</li>
+                        <li>Strength training twice a week</li>
+                        <li>Stay hydrated</li>
+                        <li>Eat a balanced diet</li>
+                    </ul>
+                </div>
+                <div class="health-card">
+                    <h3>⚠️ Warning Signs</h3>
+                    <p>Know the warning signs of serious health conditions and don't ignore persistent symptoms.</p>
+                    <ul>
+                        <li>Unusual bleeding or discharge</li>
+                        <li>Persistent pain or discomfort</li>
+                        <li>Changes in breast tissue</li>
+                        <li>Severe headaches or vision changes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="emergency" class="section">
+            <h2>Emergency Support</h2>
+            
+            <div class="emergency-contacts">
+                <div class="contact-card" onclick="callNumber('100')">
+                    <h3>🚨 Police Emergency</h3>
+                    <p>100</p>
+                </div>
+                <div class="contact-card" onclick="callNumber('181')">
+                    <h3>💗 Women Helpline</h3>
+                    <p>181</p>
+                </div>
+                <div class="contact-card" onclick="callNumber('1091')">
+                    <h3>🆘 Women in Distress</h3>
+                    <p>1091</p>
+                </div>
+                <div class="contact-card" onclick="callNumber('1098')">
+                    <h3>👶 Child Helpline</h3>
+                    <p>1098</p>
+                </div>
+                <div class="contact-card" onclick="callNumber('102')">
+                    <h3>🏥 Medical Emergency</h3>
+                    <p>102</p>
+                </div>
+                <div class="contact-card" onclick="callNumber('1800-11-0031')">
+                    <h3>🧠 Mental Health</h3>
+                    <p>1800-11-0031</p>
+                </div>
+            </div>
+            
+            <div class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <button class="btn" onclick="shareLocation()">📍 Share Location</button>
+                    <button class="btn" onclick="sendEmergencyAlert()">📱 Send Alert</button>
+                    <button class="btn" onclick="recordEvidence()">📹 Record Evidence</button>
+                </div>
+            </div>
+            
+            <div class="emergency-prep">
+                <h4>⚡ Emergency Preparedness Tips:</h4>
+                <ul>
+                    <li>Keep emergency contacts in your phone and written down</li>
+                    <li>Share your location with trusted friends or family</li>
+                    <li>Keep important documents accessible</li>
+                    <li>Have a safety plan and practice it</li>
+                    <li>Know your local police station and emergency services</li>
+                    <li>Register with local women's safety apps and helplines</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
